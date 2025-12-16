@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Student Info Card Generator</h1>
+
+    <div class="main-container">
+
+        <div class="form-container">
+            <label>Student Name:</label>
+            <input type="text" id="name" placeholder="Enter Your Name:">
+
+            <label>Student Roll No:</label>
+            <input type="number" id="roll" placeholder="Enter Your RollNo:">
+
+            <label>Studen Email:</label>
+            <input type="email" id="email" placeholder="Enter Your Email:">
+
+            <label>Student Age:</label>
+            <input type="number" id="age" placeholder="Enter Your age:">
+
+
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+
+            </div>
+
+            <label>Course:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" value="Web"> Web
+                <input type="checkbox" value="Data Science"> Data Science
+
+            </div>
+
+            <label for="marks">Marks:</label>
+            <span id="marksValue">50</span>/100
+            <input type="range" id="marks" min="0" max="100" value="50">
+
+            <label for="photo">Upload Student Photo:</label>
+            <input type="file" id="photo" accept="image/*"/>
+
+
+            <button id="Generatebtn">Generate Card</button>
+        </div>
+        <div class="card-container">
+            <div class="student-card" id="Studentcard">
+                <img src="" alt="Student Photo" class="Student-photo" id="cardimage">
+                <h2 id="cardName">Student Name:</h2>
+                <p id="cardRoll">Roll No:</p>
+                <p id="cardEmail">Email:</p>
+                <P id="cardAge">Age:</P>
+                <p id="cardGender">Gender:</p>
+                <p id="CardCourse">Course:</p>
+                <p id="cardMarks">Marks:</p>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
